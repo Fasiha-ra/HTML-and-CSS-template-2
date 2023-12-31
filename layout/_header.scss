@@ -1,0 +1,119 @@
+// .header {
+//   background-color: #F2FAFA;
+//   padding-top: 30px;
+
+//   .menu {
+//     display: block; 
+
+//     @media screen and (min-width: 992px) {
+//       display: none;
+//     }
+//   }
+
+
+//   .header-section {
+//     padding: 0 15px;
+//     margin: 0 auto;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     background-color: white;
+//     border-radius: 30px;
+
+//   }
+
+//   .navlist {
+
+//     display: none;
+//     align-items: center;
+//     justify-content: space-between;
+//     background-color: white;
+//     border-radius: 30px;
+
+//     @media screen and (min-width: 992px) {
+//       display: flex;
+//     }
+//   }
+
+//   .logo a {
+//     width: 238px;
+
+//   }
+
+//   .navlist {
+//     gap: 40px;
+//     color: #252525;
+
+//   }
+
+// }
+
+
+
+
+.header{
+  background-color: #F2FAFA;
+  padding-top: 30px;
+  position: relative;
+  .navbar {
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 30px;
+
+    .logo img {
+      width: 238px;
+    }
+
+    .navbar-btn {
+      font-size: 24px;
+      cursor: pointer;
+      // display: flex; 
+      // align-items: center;
+
+      @media screen and (min-width: 992px) {
+        display: none;
+      }
+    }
+
+    .navbar-list {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      // width: 100%;
+      //justify-content: end;
+      margin-top: 10px;
+
+      @media screen and (min-width: 992px) {
+        display: flex;
+        gap: 30px;
+        flex-direction: row;
+        margin-top: 0;
+      }
+      .nav-links{
+        padding-bottom: 20px;
+      }
+      &.active {
+        position: absolute;
+        display: block; 
+        padding: 20px;
+        width: 200px;
+        background-color: #F2FAFA;
+        box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+        top: 60px;
+        right: 20px;
+        text-align: left;
+        
+      }
+    }
+  }
+}
+
+
+
+
+
+
